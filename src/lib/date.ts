@@ -16,12 +16,12 @@ function formatUpdatedDate(date?: Date): string {
   if (!date) return 'Unknown date';
 
   const dateTimeFormat = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'Europe/Berlin',
+    timeZone: 'Asia/Kolkata',
     dateStyle: 'medium',
     timeStyle: 'short'
   });
 
-  return `${dateTimeFormat.format(date)} [CET]`;
+  return `${dateTimeFormat.format(date)} [IST]`;
 }
 
 export { formatDate, formatUpdatedDate };

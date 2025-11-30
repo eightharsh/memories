@@ -8,7 +8,7 @@ try {
     lastUpdatedDate = formatUpdatedDate(new Date());
   } else {
     const ghResponse = await fetch(
-      'https://api.github.com/repos/eightharsh/eightharsh.com/branches/main'
+      'https://api.github.com/repos/eightharsh/memories/branches/main'
     );
     const ghCommits = await ghResponse.json();
     const lastCommitDate = ghCommits?.commit?.commit?.author?.date;

@@ -1,0 +1,3 @@
+Contact: mailto:hi@eightharsh.com
+Preferred-Languages: en
+Canonical: https://eightharsh.com/.well-known/security.txt

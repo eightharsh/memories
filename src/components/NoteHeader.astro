@@ -1,0 +1,30 @@
+---
+import { formatDate } from '@/lib/date';
+
+export interface Props {
+  title: string;
+  pubDate: Date;
+}
+
+const { title, pubDate } = Astro.props;
+---
+
+<section>
+  <h2>{title}</h2>
+  <span>{formatDate(pubDate, 'long')}</span>
+</section>
+
+<style>
+  section {
+    margin: 0 0 2em 0;
+  }
+
+  section h2 {
+    margin: 1em 0 .5em;
+    font-size: 1.1em;
+  }
+
+  section span {
+    color: var(--theme-sub-text);
+  }
+</style>

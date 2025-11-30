@@ -1,0 +1,10 @@
+---
+import NotePreview from '@/components/NotePreview.astro';
+import { getNotes } from '@/lib/notes';
+
+const notes = await getNotes();
+---
+
+<section>
+  {notes.map((n) => <NotePreview note={n} />)}
+</section>

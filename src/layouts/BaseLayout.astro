@@ -1,0 +1,29 @@
+---
+import Head from '@/components/Head.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+
+const { title = '↩ Index', headProps } = Astro.props;
+---
+
+<html lang='en'>
+  <Head {...headProps} />
+
+  <body>
+    <Header {title} />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer>
+      <slot name="footer" />
+    </Footer>
+  </body>
+</html>
+
+<style>
+  main {
+    margin: 3em 0;
+  }
+</style>

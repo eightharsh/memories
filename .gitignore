@@ -22,7 +22,7 @@ pnpm-debug.log*
 # JetBrains and VSCode
 .idea
 .vscode
-
+.zed
 # yarn
 .yarn/install-state.gz
 
